@@ -5,6 +5,8 @@ import tools.jackson.databind.JsonNode;
 
 public interface NodeHandler {
 
+    String getType();
+
     void execute(JsonNode nodeData, JsonNode contextMap);
 
 }
